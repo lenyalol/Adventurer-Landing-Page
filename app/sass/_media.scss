@@ -1,0 +1,117 @@
+@import "bourbon";
+@import "vars";
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.statistics .wrapper .stat p {
+		font-size: 13px;
+	}
+	.who_we_are .stat {
+		margin-bottom: 28px;
+	}
+	.our_service .service {
+		height: 550px;
+	}
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.our_service .service {
+		height: auto;
+		margin-bottom: 15px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	button {
+		padding: 10px 25px;
+	}
+	
+	header .top_line .logo {
+		float: none;
+		text-align: center;
+	}
+	header .top_line .top_menu {
+		float: none;
+	}
+	header .top_line .top_menu ul li:last-child {
+		margin-right: 0;
+	}
+	header .carousel .item {
+		padding: 100px 0;
+	}
+	header .carousel .item h1 {
+		font-size: 50px;
+	}
+	.our_team .teammates .teammate .teammate_descr {
+		opacity: 1;
+		transition: none;
+		bottom: 0;
+	}
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	header .top_line .logo {
+		width: 100%;
+		text-align: center;
+	}
+	header .top_line .top_menu {
+		float: none;
+	}
+	header .top_line .top_menu ul li a {
+		font-size: 12px;
+	}
+	header .top_line .top_menu .search {
+		font-size: 20px;
+	}
+	header .carousel .item h1 {
+		font-size: 50px;
+	}
+	header .carousel .item p {
+		font-size: 12px;
+	}
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	header .carousel .item h1 {
+		font-size: 40px;
+	}
+	header .top_line .top_menu ul {
+		display: block;
+		text-align: center;
+	}
+	header .top_line .top_menu .search {
+		width: 100%;
+		text-align: center;
+		margin-top: 10px;
+	}
+}

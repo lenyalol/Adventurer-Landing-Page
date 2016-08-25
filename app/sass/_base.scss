@@ -1,0 +1,51 @@
+@import "bourbon";
+@import "vars";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+h2 {
+	font-family: $roboto;
+	font-weight: 700;
+	font-size: 40px;
+	color: #3f444a;
+	text-transform: uppercase;
+}
+h3 {
+	font-family: $roboto;
+	font-weight: 700;
+	color: #3f444a;
+	text-transform: uppercase;
+}
+p {
+	font-family: $roboto;
+	font-weight: 300;
+	font-size: 18px;
+	color: #5c6873;
+}
+button {
+	padding: 20px 40px;
+	margin: 0 auto;
+	text-transform: uppercase;
+	font-family: $roboto;
+	font-weight: 700;
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+	background-color: #ec4848;
+	border: none;
+}
+section {
+	padding: 50px 0;
+	text-align: center;
+	border-bottom: 1px solid #ebebeb;
+	.section_descr {
+		h2 {
+			margin-bottom: 30px;
+		}
+		p {
+			margin-bottom: 30px;
+		}
+	}
+}

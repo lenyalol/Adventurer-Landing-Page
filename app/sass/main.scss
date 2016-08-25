@@ -1,0 +1,227 @@
+@import "bourbon";
+@import "vars";
+@import "libs";
+
+.who_we_are {
+	.accordion {
+		text-align: left;
+		h3 {
+			background-color: #3f444a;
+			color: #fff;
+			font-family: $opensans;
+			font-weight: 600;
+			font-size: 16px;
+			padding: 20px 15px;
+			border-radius: 5px;
+			margin-bottom: 11px;
+			&.active {
+				background-color: #ec4848;
+			}
+		}
+		p {
+			font-size: 14px;
+			font-weight: 400;
+			color: #4c4c4c;
+			padding: 35px 20px;
+			border: 1px solid #c4c4c4;
+			border-top: none;
+			border-radius: 5px;
+			margin-top: -10px;
+			margin-bottom: 10px;
+		}
+	}
+	.stat {
+		background-color: #f2f2f2;
+		border: 1px solid #d7d7d7;
+		border-radius: 5px;
+		margin-bottom: 24px;
+		p {
+			height: 100%;
+			border-radius: 5px 0 0 5px;
+			padding: 5px 15px;
+			text-align: left;
+			background-color: #ec4848;
+			color: #fff;
+		}
+		.web {
+			width: 80%;
+		}
+		.html {
+			width: 60%;
+		}
+		.design {
+			width: 75%;
+		}
+		.wp {
+			width: 90%;
+		}
+		.joomla {
+			width: 50%;
+		}
+		.php {
+			width: 85%;
+		}
+	}
+	hr {
+		margin-top: 0;
+	}
+}
+.our_service {
+	.service {
+		padding: 35px 20px;
+		border: 1px solid #dbdbdb;
+		border-radius: 5px;
+		height: 510px;
+		img {
+			margin-bottom: 65px;
+		}
+		h3 {
+			margin-bottom: 10px;
+			text-align: left;
+			font-size: 22px;
+		}
+		p {
+			margin-bottom: 30px;
+			text-align: left;
+			font-size: 18px;
+		}
+	}
+}
+.join {
+	.wrapper {
+		background: url('../img/join_bg.jpg') no-repeat center;
+		background-size: cover;
+		padding: 100px 0;
+		h2,
+		p {
+			color: #fff;
+		}
+	}
+}
+.what_we_offer {
+	.offers {
+		margin-top: 35px;
+	}
+	.offer {
+		text-align: left;
+		margin-bottom: 35px;
+		img {
+			float: left;
+		}
+		.wrapper {
+			padding-left: 100px;
+			h3 {
+				font-size: 25px;
+				margin-bottom: 15px;
+			}
+			p {
+				font-size: 18px;
+			}
+		}
+	}
+}
+.reviews {
+	.section_descr {
+		margin-bottom: 50px;
+	}
+	.review {
+		text-align: left;
+		margin-bottom: 25px;
+		img {
+			border-radius: 50%;
+			float: left;
+		}
+		.wrapper {
+			padding-left: 150px;
+			h2 {
+				font-size: 25px;
+			}
+			.reviewer_descr {
+				font-weight: 700;
+				font-size: 14px;
+				margin-bottom: 15px;
+				color: #ed5454;
+			}
+			p {
+				font-size: 18px;
+			}
+		}
+	}
+	.review_carousel {
+		.owl-page {
+			display: inline-block;
+			width: 12px;
+			height: 12px;
+			border-radius: 50%;
+			background-color: #3f444a;
+			margin: 0 auto;
+			margin-right: 5px;
+			&.active {
+				background-color: #ec4848;
+			}
+		}
+	}
+}
+.statistics {
+	.wrapper {
+		background: url('../img/statistics_bg.jpg') no-repeat center;
+		background-size: cover;
+		padding: 50px 0;
+		.stat {
+			background-color: rgba(236, 72, 72,.302);
+			padding: 50px 0;
+			color: #fff;
+			margin-bottom: 10px;
+			.fa {
+				font-size: 50px;
+				margin-bottom: 10px;
+			}
+			h3 {
+				color: #fff;
+				font-size: 30px;
+			}
+			p {
+				color: #fff;
+				letter-spacing: 5px;
+			}
+		}
+	}
+}
+.our_team {
+	.teammates {
+		margin-top: 25px;
+		.teammate {
+			overflow: hidden;
+			position: relative;
+			margin-bottom: 10px;
+			&:hover {
+				.teammate_descr {
+					bottom: 0;
+					opacity: 1;
+				}
+			}
+			img {
+				width: 100%;
+			}
+			.teammate_descr {
+				background-color: #ec4848;
+				position: absolute;
+				width: 100%;
+				bottom: -30px;
+				opacity: 0;
+				transition: all 0.5s;
+				h3 {
+					color: #fff;
+					font-size: 25px;
+				}
+				p {
+					color: #fff;
+					font-size: 18px;
+				}
+			}
+
+		}
+	}
+}
+
+@import "media";

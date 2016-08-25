@@ -1,0 +1,99 @@
+@import "bourbon";
+@import "sass/vars";
+@import "sass/base";
+
+header {
+	.top_line {
+		padding: 30px 0;
+		.logo {
+			text-transform: uppercase;
+			font-family: $ptsans;
+			font-weight: 700;
+			font-size: 34px;
+			color: #ec4848;
+			float: left;
+		}
+		.top_menu {
+			float: right;
+			padding-top: 10px;
+			ul {
+				display: inline-block;
+				li {
+					display: inline-block;
+					margin-right: 30px;
+					a {
+						text-decoration: none;
+						text-transform: uppercase;
+						font-family: $roboto;
+						font-weight: 700;
+						font-size: 14px;
+						color: #3f444a;
+						&:hover {
+							color: #ec4848;
+						}
+					}
+				}
+			}
+			.search {
+				float: right;
+				font-size: 25px;
+				margin-top: -10px;
+			}
+		}
+	}
+	.carousel {
+		background: url('../img/slide_bg.jpg') no-repeat center;
+		background-size: cover;
+		position: relative;
+		.item {
+			padding: 260px 0;
+			text-align: center;
+			h1 {
+				text-transform: uppercase;
+				font-family: $opensans;
+				font-weight: 800;
+				font-size: 90px;
+				color: #fff;
+				margin-bottom: 0;
+			}
+			p {
+				font-family: $opensans;
+				font-weight: 600;
+				font-size: 14px;
+				color: #fff;
+				margin-bottom: 90px;
+				letter-spacing: 5px;
+			}
+		}
+		.owl-controls {
+			color: #525252;
+			position: absolute;
+			top: 50%;
+			font-size: 35px;
+			width: 100%;
+			.owl-prev {
+				margin-left: 30px;
+				float: left;
+				padding-right: 5px;
+			}
+			.owl-next {
+				margin-right: 30px;
+				float: right;
+				padding-left: 5px;
+			}
+			.owl-prev,
+			.owl-next {
+				background-color: rgba(229, 229, 230,.0);
+				border-radius: 50%;
+				width: 40px;
+				height: 40px;
+				text-align: center;
+				line-height: 40px;
+				&:hover {
+					background-color: rgba(229, 229, 230, 1);
+					color: #494949;
+				}
+			}
+		}
+	}
+}
